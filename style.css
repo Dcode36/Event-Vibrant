@@ -9,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+
 /*  */
 
 /*  */
@@ -23,38 +24,43 @@
 }
 
 
-nav img{
+nav img {
     height: 100px;
     width: 200px;
 }
-nav{
+
+nav {
 
     height: 80px;
     width: 100%;
     position: relative;
 
 }
+
 label.logo {
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-size: 2rem;
-    margin:45px 40px;
+    margin: 45px 40px;
     letter-spacing: 4px;
 
 }
-nav ul{
+
+nav ul {
     float: right;
-    margin:30px 20px;
+    margin: 30px 20px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style-type: none;
     line-height: 80px;
-    margin:  20px 40px;
+    margin: 20px 40px;
 
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px 13px;
@@ -69,16 +75,16 @@ nav ul li a:hover {
     color: #FF10F0;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     float: right;
     line-height: 80px;
-
     cursor: pointer;
     display: none;
-   
+
 }
-#check{
+
+#check {
     display: none;
 }
 
@@ -256,6 +262,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .cards-container {
@@ -285,13 +292,21 @@ h4 {
     align-items: center;
     flex-direction: column;
 }
-.event-card h2{
-    letter-spacing: 5px;
-}
-.event-card p{
+
+
+
+/* .cards-container .event-card:nth-child(1) {
+
+} */
+
+
+
+
+.event-card p {
     margin: 0 5px;
 }
-.event-card button{
+
+.event-card button {
     padding: 10px 25px;
     background-color: blue;
     outline: none;
@@ -299,18 +314,108 @@ h4 {
     border: none;
 }
 
+/*guidlines  */
+
+
+.guidlines {
+    height: 110%;
+    width: 100%;
+    background-color: #06002e;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 40%, transparent 75%, rgba(0, 0, 0, .8));
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10vh;
+}
+
+.guidlines h1 {
+    font-family: abnes;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.accordion {
+    -webkit-text-stroke: 1px #FF10F0;
+    color: transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 1.8s;
+    /* color: #FF10F0 !important; */
+    margin: 10px 0;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+.active,
+.accordion:hover {
+    background-color: #ff10efaa;
+    color: white !important;
+}
+
+.panel {
+    padding: 0 18px;
+    width: 80%;
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    transition:all 1.2s ease-out;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.panel p,
+li {
+
+    padding: 6px 0;
+    margin-bottom: 20px;
+}
+
+.panel button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+   
+
+}
+
+
+
+/*  */
 /* Responsive */
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 760px) {
-  
-    
-  
+
+
+.accordion {
+    font-size: 1rem;
+}
 
     .hero {
         text-align: center;
     }
 
-    
+
 
     .text p {
         font-size: 2.1rem;
@@ -365,26 +470,27 @@ h4 {
 
     }
 
-    label.logo{
+    label.logo {
         font-size: 30px;
         padding-left: 50px;
         position: absolute;
         top: 42px;
-        margin:0px 40px !important;
-      }
+        margin: 0px 40px !important;
+    }
 
-      nav ul li a{
+    nav ul li a {
         font-size: 16px;
-        
-      }
-      
-      .checkbtn{
+
+    }
+
+    .checkbtn {
         display: block;
         position: fixed;
         right: 20px;
         top: 40px;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -396,19 +502,21 @@ h4 {
         z-index: 10;
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
     }
 
-    nav ul li a{
-        font-size:20px ;
+    nav ul li a {
+        font-size: 20px;
     }
 
-    a:hover, a.active{
+    a:hover,
+    a.active {
         background: none;
 
     }
-    #check:checked ~ ul{
+
+    #check:checked~ul {
         left: -20px;
     }
 
@@ -416,17 +524,29 @@ h4 {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1250px) {
-    .navbar {
-        flex-direction: column;
-
-        z-index: 3;
-    }
+    
 
     .hero {
         text-align: center;
     }
+    .accordion {
+        cursor: pointer;
+        padding: 18px;
+        width: 80%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+        color: #FF10F0 !important;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
 
-   
     .text p {
         font-size: 4.9rem;
     }
@@ -445,28 +565,30 @@ h4 {
         padding: 20px 0;
 
     }
-    label.logo{
+
+    label.logo {
         font-size: 3rem;
         padding-left: 50px;
         position: absolute;
         top: 0;
         left: -10px;
 
-      }
+    }
 
-      nav ul li a{
+    nav ul li a {
         font-size: 16px;
-        
-      }
-      
-      .checkbtn{
+
+    }
+
+    .checkbtn {
         display: block;
         position: absolute;
         right: 20px;
         top: 40px;
         font-size: 3rem;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -478,28 +600,26 @@ h4 {
         transition: all .5s;
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
     }
 
-    nav ul li a{
-        font-size:20px ;
+    nav ul li a {
+        font-size: 20px;
     }
 
-    a:hover, a.active{
+    a:hover,
+    a.active {
         background: none;
 
     }
-    #check:checked ~ ul{
+
+    #check:checked~ul {
         left: -20px;
 
     }
-    a:checked ~ul{
+
+    a:checked~ul {
         left: -1200px;
     }
 }
-
-
-
-
-
