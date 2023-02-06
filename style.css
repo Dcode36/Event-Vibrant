@@ -32,27 +32,29 @@
 }
 
 nav {
-  height: 15%;
+  height: 12vh;
   width: 100%;
   display: flex;
-  margin: -20px !important;
-  padding: 100px !important;
+  margin-left: -20px !important;
+  padding-top: 30px !important;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 11;
+  background-color: #06002eb9;
 }
 
 nav img {
   height: 100px;
   width: 150px;
-  margin: 80px;
+  margin: 70px !important;
 }
 
 
 .nav-menu {
   flex: 1;
   text-align: right;
+  
 }
 
 .nav-menu ul li {
@@ -60,6 +62,7 @@ nav img {
   display: inline-block;
   padding: 8px 12px;
   position: relative;
+  margin: 20px !important;
 }
 
 .nav-menu ul li a {
@@ -89,7 +92,7 @@ nav .bi {
 
 @media(max-width: 900px) {
   nav {
-    background-color: black;
+    background-color: #06002eb9;
     width: 102%;
     padding: 20px !important;
   }
