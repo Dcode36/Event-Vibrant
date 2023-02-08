@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.eventpage{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 40%, transparent 75%, rgba(0, 0, 0, .8)),  url(./assets/event.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+
+    margin-left: 0px !important;
+  
+  
+  }
+  
+  
+ .slide img {
+    width: 120px;
+    height: 120px;
+    animation: scroll 60s linear infinite;
+  }
+  
+  .slide-track {
+    width:100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 40%, transparent 75%, rgba(0, 0, 0, .8)),  url(./assets/sponcer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7em 1em;
+  }
+  .slider p{
+    letter-spacing: 4px;
+    font-family: abnes;
+  }
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
+
+.footer{
+    letter-spacing: 3px;
+}
