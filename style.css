@@ -256,7 +256,7 @@ h4 {
 }
 
 .about-left {
-  height: 70%;
+  max-height: 100%;
   width: 40%;
   background-color: white;
   margin: 0 5%;
@@ -353,8 +353,11 @@ h4 {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  transition: 0.4s ease-in;
 }
-
+.event-card:hover{
+  transform: scale(1.1);
+}
 
 
 .cards-container .event-card:nth-child(1) {
